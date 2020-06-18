@@ -1,5 +1,5 @@
 {
-  "name": "willow-tracker",
+  "name": "pupper-tracker",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,25 @@
     "start": "next start"
   },
   "dependencies": {
+    "airtable": "^0.8.1",
+    "classnames": "^2.2.6",
     "next": "9.4.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "runtypes": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/airtable": "^0.8.0",
+    "@types/classnames": "^2.2.10",
+    "@types/node": "^14.0.13",
+    "@types/react": "^16.9.38",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.5"
+  },
+  "prettier": {
+    "jsxBracketSameLine": true,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }
