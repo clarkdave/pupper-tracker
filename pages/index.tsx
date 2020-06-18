@@ -19,6 +19,11 @@ const Home: React.FC<Props> = ({ dogName }) => {
     <div className="container">
       <Head>
         <title>{dogName} Tracker</title>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"

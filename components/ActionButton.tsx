@@ -8,7 +8,7 @@ export const ActionButton: React.FC<{
 }> = ({ kind, location }) => {
   const [submitting, setSubmitting] = useState(false)
   const [success, setSuccess] = useState(false)
-  const emoji = kind === 'Pee' ? '💧' : '💩'
+  const emoji = success ? '☑' : kind === 'Pee' ? '💦' : '💩'
 
   const reset = () => {
     setSubmitting(false)
@@ -70,7 +70,6 @@ export const ActionButton: React.FC<{
         }
 
         a.success {
-          background-color: rgba(174, 218, 163, 0.3);
           pointer-events: none;
         }
 
