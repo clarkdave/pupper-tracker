@@ -71,6 +71,14 @@ const Home: React.FC<Props> = ({ dogName }) => {
             <ActionButton kind="Poop" location="Floor" />
           </div>
         </div>
+
+        <div className="track">
+          <h2>Walk 🌱</h2>
+          <div className="actions">
+            <ActionButton kind="Pee" location="Walk" />
+            <ActionButton kind="Poop" location="Walk" />
+          </div>
+        </div>
       </main>
 
       <style jsx>{`

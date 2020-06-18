@@ -12,7 +12,12 @@ async function sleep(ms: number) {
 
 const TrackerBody = T.Record({
   kind: T.Union(T.Literal('Pee'), T.Literal('Poop')),
-  location: T.Union(T.Literal('Balcony'), T.Literal('Pad'), T.Literal('Floor')),
+  location: T.Union(
+    T.Literal('Balcony'),
+    T.Literal('Pad'),
+    T.Literal('Floor'),
+    T.Literal('Walk'),
+  ),
 }).asReadonly()
 
 export type TrackerBody = T.Static<typeof TrackerBody>
